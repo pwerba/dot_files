@@ -1,0 +1,15 @@
+#a nice setup for VIM for mac..
+  1 set number
+  2 set showmatch
+  3 map g 1G
+  4
+  5 :syntax enable
+  6 :if has("terminfo")
+  7 : set t_Co=8
+  8 : set t_Sf=<Esc>[3%p1%dm
+  9 : set t_Sb=<Esc>[4%p1%dm
+ 10 :else
+ 11 : set t_Co=8
+ 12 : set t_Sf=<Esc>[3%dm
+ 13 : set t_Sb=<Esc>[4%dm
+ 14 :endif
